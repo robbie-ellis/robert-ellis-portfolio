@@ -20,6 +20,7 @@ header {
 .flex-container {
 	display: flex;
 	justify-content: space-between;
+	white-space: nowrap;
 }
 
 .constant-name {
@@ -29,16 +30,33 @@ header {
 	height: 50px;
 	background-color: white;
 	padding: 5px;
-	border: 1px solid black;
+	border: 2px solid black;
 	color: black;
+	z-index: 2;
 }
 
-.site-nav {
+.site-nav-button {
 	display: inline;
-	margin-top: 10px;
+	margin-top: 20px;
+	padding: 5px;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+	height: 30px;
+	font-size: 16px;
+	text-align: center;
+	border: none;
+	color: black;
+	transition: transform 0.3s ease;
 }
 
-#overlay {
+.site-nav-button:hover {
+	transform: scale(1.5);
+	opacity: 0.95;
+	cursor: pointer;
+	
+}
+
+.overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -50,7 +68,7 @@ header {
 	transition: opacity 0.5s ease, visibility 0.5s ease; 
 }
 
-#overlay.open {
+.overlay.open {
 	opacity: 1;
 	visibility: visible;
 }
@@ -193,24 +211,6 @@ body {
 	/*
 	background-color: #827d92;
 	*/
-}
-
-.site-nav-button {
-	background-color: white;
-	padding: 5px 5px;
-	font-size: 16px;
-	margin: 11px;
-	text-align: center;
-	border: none;
-	color: black;
-	transition: transform 0.3s ease;
-}
-
-.site-nav-button:hover {
-	transform: scale(1.5);
-	opacity: 0.95;
-	cursor: pointer;
-	
 }
 
 .portfolio-button {
