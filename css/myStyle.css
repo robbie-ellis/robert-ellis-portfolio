@@ -1,0 +1,248 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	text-align: center;
+	display: block;
+}
+
+.banner {
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	margin-top: 0%;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.constant-name {
+	margin-left: 10%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 50px;
+	background-color: white;
+	padding: 5px;
+	border: 1px solid black;
+	color: black;
+}
+
+.site-nav {
+	display: inline;
+	margin-top: 10px;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s ease, visibility 0.5s ease; 
+}
+
+#overlay.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.menu-button {
+	margin-right: 10%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	width: 30px;
+	height: 22px;
+}
+
+.menu-burger {
+	width: 100%;
+	height: 4px;
+	background-color: black;
+	border-radius: 2px;
+	transition: all 0.3s ease;
+	position: relative;
+}
+
+.menu-burger::before,
+.menu-burger::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	background-color: black;
+	border-radius: 2px;
+	transition: all 0.3s ease;
+	left: 0;
+}
+
+.menu-burger::before {
+	top: -8px;
+}
+
+.menu-burger::after {
+	top: 8px;
+}
+
+.menu-button.open .menu-burger {
+	transform: rotate(45deg);
+}
+
+.menu-button.open .menu-burger::before {
+	transform: rotate(90deg);
+	top: 0;
+}
+
+.menu-button.open .menu-burger::after {
+	transform: rotate(90deg);
+	top: 0;
+}
+
+.nav-portfolio {
+	position: fixed;
+	top: 50px;
+	left: auto;
+	right: 4%;
+	margin-right: 4%;
+	border: 2px solid black;
+	border-radius: 5px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s ease, visibility 0.5s ease;
+	text-align: center;
+	width: 150px;
+	height: 340px;
+	background: linear-gradient(45deg, white, lightgray);
+}
+
+.nav-portfolio.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.table-title {
+	text-align: center;
+	color: coral;
+}
+
+.table-data {
+	color: coral;
+}
+
+footer {
+	text-align: center;
+	display: block;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+a:hover {
+	color: cyan; 
+}
+
+hr {
+	border-color: #BBBBBB;
+}
+
+article {
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 80%;
+}
+
+.title-container {
+text-align: center; 
+padding-bottom: 10px;
+}
+
+.page-title {
+	display: inline-block;
+	color: black;
+	border: 2px solid black;
+	text-align: center;
+	width: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.banner-photo {
+	width: 80%;
+	margin-top: 70px; /* Should match .banner height */ 
+	height: auto;
+	max-width: 100%;
+	color: black;
+}
+
+body {
+	font-family: "SUSE", sans-serif;
+
+	background-color: white;
+	/*
+	background-color: #827d92;
+	*/
+}
+
+.site-nav-button {
+	background-color: white;
+	padding: 5px 5px;
+	font-size: 16px;
+	margin: 11px;
+	text-align: center;
+	border: none;
+	color: black;
+	transition: transform 0.3s ease;
+}
+
+.site-nav-button:hover {
+	transform: scale(1.5);
+	opacity: 0.95;
+	cursor: pointer;
+	
+}
+
+.portfolio-button {
+	background-color: white;
+	padding: 5px 16px;
+	font-size: 16px;
+	margin: 5px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 5px;
+	color: black;
+	box-shadow: 5px 5px 8px;
+	transition: transform 0.3s ease;
+}
+
+.portfolio-button:hover {
+	transform: scale(1.7);
+	opacity: 0.95;
+	cursor: pointer;
+	box-shadow: 5px 5px 8px black;
+}
+
+.no-underline {
+	text-decoration: none;
+}
+
+div.container {
+	text-align: center;
+}
+
+ul.skills {
+	display: inline-block;
+	text-align: left;
+	margin-top: 0;
+}
