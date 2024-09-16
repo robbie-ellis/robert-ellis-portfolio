@@ -269,14 +269,27 @@ body {
 
 .portfolio-container {
 	display: flex;
-	justify-content: space-between;
-	margin-left: 30%;
-	margin-right: 30%;
+	justify-content: space-around;
 }
 
 .portfolio-paragraph {
+	max-width: 300px;
+}
+
+.portfolio {
+	margin-left: 17%;
+	margin-right: 17%;
+	display: flex; 
+	justify-content: space-around;
+}
+
+.portfolio-left {
 	display: flex;
-	width: 300px;
-	height: auto;
-	align-items: center;
+}
+
+@media (max-width: 988px) {
+	.portfolio {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 }
