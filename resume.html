@@ -14,38 +14,49 @@
 			margin-right: auto;
 			margin-bottom: 30px;
 			width: 70%;
-	    border: 2px solid;
+	    border: 2px solid white;
 			padding: 2px;
+			
 	  }
 	  
 	  .table-inline-block {
 	    display: inline-block;
-			border: 2px solid;
+			border: 2px solid white;
 			padding: 2px;
 			vertical-align: top;
+			
 	  }
 	  
 	  th {
 	    padding: 5px;
-			border: 1px solid black;
-	  }
+			border: 1px solid white;
+			
+		}
 	  
 	  td {
 	    padding: 5px;
-			border: 1px solid;
-	  }
+			border: 1px solid white;
+			background: linear-gradient(45deg, white, lightgray);
+			border-radius: 10px;
+		}
 	</style>
   </head>
   
 <body>
   
-  <header>
+  <div class="overlay" id="overlay"></div>
+	<header>
 		<div class="banner">
-			<div class="flex-container">
+			<div class="flex-container" id="flexContainer">
 				<div class="constant-name">
 					<h4>Robert Ellis</h4>
 					<h5>Frontend Developer</h5>
 				</div>
+				<nav class="site-nav">
+					<button class="site-nav-button" onclick="window.location.href='home.html'"><strong>Home</strong></button>
+					<button class="site-nav-button" onclick="window.location.href='resume.html'"><strong>Resume</strong></button>
+					<button class="site-nav-button" onclick="window.location.href='portfolio.html'"><strong>Portfolio</strong></button>
+				</nav>
 				<div class="menu-button" id="menuButton">
 					<div class="menu-burger"></div>
 				</div>
@@ -56,166 +67,156 @@
 		alt="Robert Ellis Photo"/>
 		
 	</header>
-	
+    
 	<nav class="nav-portfolio" id="navPortfolioMenu">
 			<br/>
-			<button onclick="window.location.href='home.html'"><strong>Home</strong></button>
+			<button class="portfolio-button" onclick="window.location.href='home.html'"><strong>Home</strong></button>
 			<br/>
 			<br/>
-			<button onclick="window.location.href='resume.html'"><strong>Resume</strong></button>
+			<button class="portfolio-button" onclick="window.location.href='resume.html'"><strong>Resume</strong></button>
 			<br/>
 			<br/>
-			<button onclick="window.location.href='interests.html'"><strong>Interests</strong></button>
+			<button class="portfolio-button" onclick="window.location.href='interests.html'"><strong>Interests</strong></button>
 			<br/>
 			<br/>
-			<button onclick="window.location.href='reflections.html'"><strong>Reflections</strong></button>
+			<button class="portfolio-button" onclick="window.location.href='reflections.html'"><strong>Reflections</strong></button>
 			<br/>
 			<br/>
-			<button onclick="window.location.href='guestbook.html'"><strong>Guestbook</strong></button>
+			<button class="portfolio-button" onclick="window.location.href='guestbook.html'"><strong>Guestbook</strong></button>
 	</nav>
-  
-  <h1 class="page-title" style="text-align: center;">Resume</h1>
-  
-  <div style="text-align: center;">
-		<table>
-			
-			<table class="table-inline-block" style="border: 0px; margin-right: 5%;">
-				<tr>
-				<th style="border: 0px; font-size: 30px;" colspan="2">Robert Ellis</th>
+	
+	<div class="title-container"><h1 class="page-title">RESUME</h1></div>
+
+	<div class="skills-container">
+		<table style="border: 0px;">
+			<tr>
+				<th style="border: 0px; font-size: 24px;" class="table-data"><strong>Technical Skills</strong></th>
 			</tr>
 			<tr>
-				<td style="border: 0px; font-size: 22px;" class="table-data"><strong>Desired Job:</strong></td>
-				<td style="border: 0px;">Frontend Developer</td>
+				<td style="border: 0px;">
+					<div class="container">
+						<ul class="skills">
+							<li>JavaScript</li>
+							<li>AJAX</li>
+							<li>JSON</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Java</li>
+							<li>Python</li>
+							<li>Microsoft 365</li>
+							<li>Google Workspace</li>
+						</ul>
+					</div>
+				</td>
 			</tr>
-			</table>	
-			
-			<table class="table-inline-block" style="border: 0px;">
-				<tr>
-					<th style="border: 0px; font-size: 24px;" class="table-data"><strong>Technical Skills</strong></th>
-				</tr>
-				<tr>
-					<td style="border: 0px;">
-						<div class="container">
-							<ul class="skills">
-							<li>Java</li>
-							<li>Python</li>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>Microsoft 365</li>
-							<li>Google Suite</li>
-							<li>Zoom</li>
-							</ul>
-						</div>
-					</td>
-				</tr>
-			</table>
-			
-			<table class="table-inline-block" style="border: 0px;">
-				<tr>
-					<th style="border: 0px; font-size: 24px;" class="table-data"><strong>Professional Skills</strong></th>
-				</tr>
-				<tr>
-					<td style="border: 0px;">
-						<div class="container">
-							<ul class="skills">
-							<li>Java</li>
-							<li>Python</li>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>Microsoft 365</li>
-							<li>Google Suite</li>
-							<li>Zoom</li>
-							</ul>
-						</div>
-					</td>
-				</tr>
-			</table>
-
 		</table>
-  </div>	  
+		
+		<table style="border: 0px;">
+			<tr>
+				<th style="border: 0px; font-size: 24px;" class="table-data"><strong>Professional Skills</strong></th>
+			</tr>
+			<tr>
+				<td style="border: 0px;">
+					<div class="container">
+						<ul class="skills">
+						<li>Self-starter</li>
+							<li>Time management</li>
+							<li>Adaptability</li>
+							<li>Research</li>
+							<li>Remote work</li>
+							<li>Teamwork</li>
+							<li>Problem Solving</li>
+							<li>Communication</li>
+							
+						</ul>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>	  
   
   <hr/>
-	  
+	<br/>  
   <h2 class="table-title">Education</h2>
-
-  <table class="table-block">
-    <tr style="color: coral">
-	  <th>Duration</th>
-	  <th>Degrees and Certifications</th>
-	  <th>Institution</th>
-	</tr>
-    <tr>
-	  <td>2023 - Present</td>
-	  <td>IBM AI Engineering Professional Certificate</td>
-	  <td>Coursera</td>
-	</tr>
-	<tr>
-	  <td>2022 - Present</td>
-	  <td>Full Stack Developer Certificate</td>
-	  <td>Edmonds College</td>
-	</tr>
-	<tr>
-	  <td>2006 - 2009</td>
-	  <td>Music Production and Technology Master Certification</td>
-	  <td>Berklee Online</td>
-	</tr>
-    <tr>
-	  <td>2000 - 2005</td>
-	  <td>BA Religion</td>
-	  <td>Wake Forest University</td>
-	</tr>
-  </table>
+	<p style="text-align: center;"><strong>Wake Forest University | BA Religion</strong></p>
+	<p style="text-align: center;">Minor, Music<br/>
+		Study Abroad, Summer Session<br/>
+		<em>Wake Forest University Venice Campus,
+		Venice, Italy</em>
+	 </p>
+	 <br/>
+  
   <hr/>
 
+	<br/>
   <h2 class="table-title">Work Experience</h2>  
 	
-  <table class="table-block">
-    <tr style="color: coral">
+  <table class="table-block table-colors"> <!-- css internal-->
+    <tr>
 	  <th>Duration</th>
       <th>Job Title</th>
       <th>Experience</th>	
 	</tr>
 	<tr>
+	  <td style="width: 12%;">2024 - Present</td>
+	  <td><strong>Frontend Developer</strong>, Freelance</td>
+	  <td>Frontend developer for the RCLM (the <a href="https://therclm.ds.lib.uw.edu/proof-of-concept/harley-sample/" target="_blank">Richard Coer de Lyon Multitext</a>)
+		website, an ongoing project begun in 2018 which has received multiple
+		rounds of funding from the Simpson Center for the Humanities at the
+		University of Washington</td> 
+	</tr>
+	<tr>
 	  <td style="width: 12%;">2017 - Present</td>
-	  <td>Guitar and Electric Bass Instructor (Part-time), 4/4 School of Music</td>
-	  <td>Work one-on-one with students of all ability levels, beginner to advanced, 
-	  ranging in age from six to senior citizens.  Teach lessons ranging from 30 to 
-	  60 minutes both in person and via zoom, teaching any style of music on electric 
-	  or acoustic guitar, and electric bass.  Prepare students for live performances 
-	  and perform with students when wanted or needed.</td> 
+	  <td><strong>Guitar and Electric Bass Instructor</strong> (Part-time), 4/4 School of Music</td>
+	  <td>Work one-on-one with students of all ability levels, beginner to advanced,
+			ranging in age from six to senior citizens. Teach lessons ranging from 30 to
+			60 minutes both in person and via Zoom, teaching any style of music on
+			electric or acoustic guitar, and electric bass. Prepare students for live
+			performances and perform with students when wanted or needed. 
+			</td> 
 	</tr>
 	<tr>
 	  <td>2014 - Present</td>
-	  <td>Career Pause</td>
-	  <td>During this time I continued freelance game audio contracting and began 
-	  teaching guitar and bass lessons, but I primarily focused on our young family, 
-	  taking care of my daughter and son, and supporting my wife as she completed 
-	  her post-doctoral work as Stanford University, and began her work as an 
-	  assistant professor at the University of Washington.</td>
+	  <td><strong>Career Pause</strong></td>
+	  <td>During this time, I continued freelance game audio contracting and began
+			teaching guitar and bass lessons, but I primarily focused on our young
+			family, taking care of my daughter and son, and supporting my wife as she
+			completed her post-doctoral work at Stanford University, and began her
+			work as an assistant professor at the University of Washington.
+			</td>
     </tr>
     <tr>
       <td>2013 - 2014</td>
-      <td>Game Audio Developer (Independent Contractor)</td>
-      <td>After leaving Game Closure, I continued to work with them as they needed 
-	  audio assets for their projects, along with working on various other contracts, 
-	  such as sound effects and music for Robit Studio’s follow-up to the award 
-	  winning "Treasure Adventure Game", 
+      <td><strong>Game Audio Developer</strong> (Independent Contractor)</td>
+      <td>After leaving Game Closure, I continued to work with them as they needed
+				audio assets for their projects, along with working on various other
+				contracts, such as sound effects and music for Robit Studio’s follow-up to
+				the award-winning "Treasure Adventure Game"				
 	  <a href="https://store.steampowered.com/app/268770/Treasure_Adventure_World/" 
 	  target="_blank">"Treasure Adventure World"</a>.</td>
     </tr>
 	<tr>
       <td>2012 - 2013</td>
-	  <td>Game Audio Developer (Full-time), Game Closure</td>
-	  <td>Worked full-time developing audio assets (sound effects, and music) for 
-	  all Game Closure mobile game projects.  Worked with rapid development cycles 
-	  generally ranging from 1 to 2 weeks for a completed project.  Worked closely 
-	  with programmers, and artists, to provide high quality, tailored audio 
-	  experiences.  Served on the quality assurance team to test projects on a wide 
-	  variety of mobile devices, providing feedback, and bug reports.</td>
+	  <td><strong>Game Audio Developer</strong> (Full-time), Game Closure</td>
+	  <td>Worked full-time developing audio assets (sound effects, and music) for
+			Game Closure mobile game projects 
+			(<a href="https://www.youtube.com/watch?v=OC2Wv7rvy1Q" 
+			target="_blank">"Kiwi Run!"</a>, 
+			<a href="https://www.youtube.com/watch?v=ZZZIq2mLr9c" target="_blank">
+			"Mecha Mecha Panic"</a>). 
+			Worked with rapid development
+			cycles generally ranging from 1 to 2 weeks for a completed project.
+			Worked closely with programmers, and artists, to provide high quality,
+			tailored audio experiences. Served on the quality assurance team to test
+			projects on a wide variety of mobile devices, providing feedback, and bug
+			reports. 
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/m5iwpPj698U?si=2neXl3526-GpGtku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/OC2Wv7rvy1Q?si=c_tq9w-VyHBQtzYf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</td>
 	</tr>
 	<tr>
 	  <td>2011 - 2012</td>
-	  <td>Game Audio Developer (Independent Contractor)</td>
+	  <td><strong>Game Audio Developer</strong> (Independent Contractor)</td>
 	  <td>Developed audio assets for a variety of projects, delivering my work on 
 	  time, and to specification.  Notable projects include the award-winning 
 	  freeware title, 
@@ -224,7 +225,7 @@
 	</tr>
 	<tr>
 	  <td>2011</td>
-	  <td>Accuracy Specialist (Seasonal Contractor), Pictometry International Corp.</td>
+	  <td><strong>Accuracy Specialist</strong> (Seasonal Contractor), Pictometry International Corp.</td>
 	  <td>Used proprietary software to check aerial image libraries for accuracy relating
 	  to geospatial data</td>
 	</tr>  
