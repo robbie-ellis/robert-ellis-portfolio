@@ -247,6 +247,14 @@ body {
 	margin-right: 30%;
 }
 
+.education-container {
+	display: flex; 
+	justify-content: space-around;
+	align-items: flex-start;
+	width: auto;
+	
+}
+
 .container {  /* For list text */
 	display: flex;
 	justify-content: space-between;
